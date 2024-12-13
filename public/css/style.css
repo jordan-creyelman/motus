@@ -1,0 +1,44 @@
+#motus-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrage vertical */
+    min-height: 100vh; /* Hauteur minimale de la fenêtre */
+    
+    margin: 0; /* Supprime les marges inutiles */
+    font-family: Arial, sans-serif;
+}
+
+#game-setup label, #game-setup input, #game-setup select, #game-setup button {
+    margin: 5px;
+}
+
+#output {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#input {
+    margin-top: 10px;
+    display: none; /* Masqué par défaut */
+}
+
+#input:focus {
+    outline: 2px solid #007BFF;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.misplaced {
+    color: orange;
+    font-weight: bold;
+}
